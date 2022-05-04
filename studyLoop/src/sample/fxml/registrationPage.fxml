@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="dateOfBirth" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d8dfed;" translateX="1.0"
+            translateY="1.0" translateZ="1.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.controller.RegistrationPageController">
+    <children>
+        <ImageView fx:id="logoPicture" layoutX="179.0" layoutY="12.0">
+            <image>
+                <Image url="@../img/1.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="buttonSignUp" layoutX="221.0" layoutY="355.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="186.0" text="Sign up">
+            <opaqueInsets>
+                <Insets bottom="60.0" left="60.0" right="60.0" top="60.0"/>
+            </opaqueInsets>
+            <cursor>
+                <Cursor fx:constant="DEFAULT"/>
+            </cursor>
+            <rotationAxis>
+                <Point3D x="1.0" y="1.0" z="1.0"/>
+            </rotationAxis>
+            <padding>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0"/>
+            </padding>
+        </Button>
+        <TextField fx:id="fieldName" layoutX="181.0" layoutY="101.0" prefHeight="26.0" prefWidth="267.0"
+                   promptText="Name"/>
+        <TextField fx:id="fieldPhoneNumber" layoutX="181.0" layoutY="136.0" prefHeight="26.0" prefWidth="267.0"
+                   promptText="Phone number"/>
+        <RadioButton fx:id="radioButtonMale" layoutX="181.0" layoutY="208.0" mnemonicParsing="false" text="Male"/>
+        <RadioButton fx:id="radioButtonFemale" layoutX="181.0" layoutY="237.0" mnemonicParsing="false" text="Female"/>
+        <Label fx:id="logoText" layoutX="266.0" layoutY="14.0" prefHeight="76.0" prefWidth="195.0"
+               style="-fx-background-color: 385c96;" text="Study Loop">
+            <font>
+                <Font name="System Bold" size="34.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="fieldMail" layoutX="181.0" layoutY="172.0" prefHeight="26.0" prefWidth="267.0"
+                   promptText="Mail"/>
+        <TextField fx:id="fieldCountry" layoutX="180.0" layoutY="278.0" prefHeight="26.0" prefWidth="267.0"
+                   promptText="Country"/>
+        <PasswordField fx:id="fieldPassword" layoutX="179.0" layoutY="313.0" prefHeight="28.0" prefWidth="267.0"
+                       promptText="Password"/>
+        <DatePicker layoutX="259.0" layoutY="213.0" prefHeight="28.0" prefWidth="186.0" promptText="Date Of Birth"/>
+    </children>
+    <cursor>
+        <Cursor fx:constant="OPEN_HAND"/>
+    </cursor>
+    <rotationAxis>
+        <Point3D x="1.0" y="1.0" z="1.0"/>
+    </rotationAxis>
+</AnchorPane>
